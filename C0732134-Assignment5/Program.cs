@@ -33,29 +33,15 @@ namespace C0732134_Assignment5
 
             for (int i = 0; i < wordArrayLength-1; i++)
             {
-                takeLengthOfFirstWord = words[i].Length;
-                takeLengthOfSecondWord = words[i + 1].Length;
+                takeLengthOfFirstWord = words[i].Length;                // This will take the Length of first word , Later will move to the next word
+                takeLengthOfSecondWord = words[i + 1].Length;           // This will take Length of proceeding Word , and will carry on till the End Word
 
-                if (takeLengthOfFirstWord > takeLengthOfSecondWord)
-                    max = words[i];
+                if (takeLengthOfFirstWord > takeLengthOfSecondWord)         // Here we are comparing whether first letter's length is greater than Adjacent word
+                    max = words[i];                                         // Here we are storing the longest word of the two. It will be replaced as soon as it encounters another long word
             }
 
             return max;
-
-            //// loop post condition: we now have array word Length which
-            //// contains the lengths of each word
-
-            //string currentWord = words[0];
-            //string nextWord;
-
-            //for (int y 0; y < words.Length - 1; y++)
-            //{
-            //    currentWord = words[y];
-            //    nextWord = words[y + 1];
-            //    // TODO: Use an IF Statement to make sure that variable longest Word
-            //    // is always set to the Longest Word in the input string
-            //}
-            //return " ";
+            
         }
 
         
