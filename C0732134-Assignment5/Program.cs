@@ -13,7 +13,7 @@ namespace C0732134_Assignment5
         {
             Program a = new Program();
 
-            Console.Write("the longest word is : ");
+            Console.Write("the longest word is : "); 
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
 
             Console.ReadLine();
